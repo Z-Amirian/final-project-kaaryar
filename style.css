@@ -9,10 +9,10 @@
     --color-item-background: #FFFFFF;
     --color-footer-background: #14213D;
     --color-border: #E5E7EB;
-    --color-background-picture1: #E6F6FD;
-    --color-background-picture2: #FEF4D3;
-    --color-background-picture3: #E6EAFF;
-    --shadow: 0px 0px 5px 1px rgba(59, 59, 59, 0.05);
+    --color-background-picture1: #ecfcff;
+    --color-background-picture2: #fff9e4;
+    --color-background-picture3: #eeeeff;
+    --shadow: 0px 0px 5px 1px rgba(77, 77, 77, 0.05);
 }
 
 *{
@@ -25,6 +25,8 @@ body{
     flex-direction: column;
     background-color: var(--color-body-background);
     position: relative;
+    min-width: 660px;
+    overflow: auto;
 }
 
 .header{
@@ -142,6 +144,80 @@ body{
     font-size: 16px;
 }
 
+.products__list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    overflow: hidden;
+    background-color: var(--color-item-background);
+    border: 1px solid var(--color-border);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    height: fit-content;
+}
+.product__image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 170px;
+}
+.product__image img{
+    width: 90px;
+    height: 90px;
+    
+}
+.product__info{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 15px;
+    position: relative;
+    row-gap: 13px;
+    
+}
+.product__name {
+    font-size: 14px;
+}
+.product__price{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-main-text);
+}
+.product__score{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 14px;
+    color: var(--color-score);
+}
+
+.product__badge {
+    width: 70px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: var(--color-body-green);
+    color: var(--color-main-green);
+    font-size: 11px;
+    font-weight: 600;
+    text-align: center;
+}
+.headphone, .speaker{
+    background-color: var(--color-background-picture1);
+}
+.watch, .keyboard{
+    background-color: var(--color-background-picture2);
+}
+.camera, .mug{
+    background-color: var(--color-background-picture3);
+}
 .products__toolbar{
     display: flex;
     justify-content: space-between;
@@ -150,6 +226,7 @@ body{
 
 .filter {
     width: 265px;
+    min-width: 265px;
     padding: 20px;
     background-color: var(--color-item-background);
     border: 1px solid var(--color-border);
