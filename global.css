@@ -93,7 +93,7 @@ body {
     width: auto;
 }
 
-.link {
+.link, .product__card {
     text-decoration: none;
 }
 
