@@ -1,0 +1,141 @@
+.main__container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 20px 80px;
+}
+
+.product{
+    display: flex;
+    gap: 40px;
+
+}
+.product__info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 4px;
+    min-width: 310px;
+}
+
+.product__badge{
+     width: 50px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: var(--color-body-green);
+    color: var(--color-main-green);
+    font-size: 11px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.star{
+    color:var(--color-score);
+}
+.product__description, .comment__text{
+    font-weight: 500;
+    max-width: 650px;
+}
+
+.product__price{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.product__button{
+    width: 140px;
+    padding: 10px;
+    border: 1px solid var(--color-main-green);
+    background-color: var(--color-main-green);
+    color: white;
+    border-radius: 10px;
+    margin: 0 10px;
+    font-weight: 500;
+}
+
+.product__information{
+    color: var(--color-secondry-green);
+}
+
+.image{
+    display: flex;
+    gap: 15px;
+
+}
+.image__selected{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:  0px 0px 5px 0.1px rgba(100, 100, 100, 0.05);
+    border-radius: 20px;
+}
+.headphone{
+    background-color: var(--color-background-picture1);
+}
+.image__selected img{
+    width: 200px;
+    height: 200px;
+}
+.image__list{
+    display: flex;
+    flex-direction:column;
+    gap: 8px
+
+}
+.image__list img{
+    width: 65px;
+    height: 65px;
+    background-color: var(--color-item-background);
+    padding: 15px;
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+}
+
+
+.comments{
+
+}
+.comments__title{
+    font-size: 20px;
+}
+.comment{
+    background-color: var(--color-item-background);
+    margin: 20px 0;
+    border: 1px solid var(--color-border);
+    border-radius: 20px;
+    padding: 20px 18px;
+}
+.comment__star{
+    margin: 0 10px;
+}
+.comment__text {
+    margin-top: 7px;
+}
+
+@media (max-width: 930px){
+    .product{
+        flex-wrap: wrap;
+    }  
+}
+@media (max-width: 768px){
+    .main__container{
+        max-width: 390px;
+        margin: 0;
+    }
+    .image__selected {
+        max-width: 250px;
+        max-height: 250px;
+    }
+    .image__selected img{
+        max-width: 150px;
+        max-height: 150px;
+    }
+    
+
+    .main__container {
+        margin: 20px 30px;
+    }
+
+}
