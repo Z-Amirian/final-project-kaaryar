@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="Vazirmatn-font-face.css">
+    <title>فرم ورود</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="link navbar__logo">
+                بازارینو
+            </a>
+            <div class="navbar__items">
+                <div class="navbar__right">
+                    <a href="#" class="link navbar__item">خانه</a>
+                    <a href="index.html" class="link navbar__item">فروشگاه</a>
+                    <a href="#" class="link navbar__item">دسته‌بندی‌ها</a>
+                    <a href="#" class="link navbar__item">درباره ما</a>
+                </div>
+                <div class="navbar__left">
+                    <button class="button navbar__item navbar__cart">سبد خرید.۲</button>
+                    <a href="form.html" class="link navbar__item">ورود</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="card__container">
+            <h1 class="card__title title">
+                ساخت حساب کاربری
+
+            </h1>
+            <p class="card__description body-text">
+               برای خرید سریع‌تر، حساب بازارینو را بسازید.
+
+            </p>
+            <form class="form">
+
+                <div class="form__item">
+                    <label class="form__subtitle subtitle" for="email">ایمیل</label>
+                    <input class="form__input" type="email" id="email" name="email" placeholder="name@example.com">
+                </div>
+
+                <div class="form__item">
+                    <label class="form__subtitle subtitle" for="phone">شماره همراه</label>
+                    <input class="form__input" type="tel" id="phone" name="phone" placeholder="09123456789" pattern="[0-9]+" minlength="11" maxlength="13">
+                </div>
+
+                <div class="form__item">
+                    <label class="form__subtitle subtitle" for="password">رمز عبور</label>
+                    <input class="form__input" type="password" id="password" name="password" placeholder="حداقل ۸ کاراکتر" minlength="8">
+                </div>
+
+                <div class="form__item">
+                    <label class="form__subtitle subtitle" for="confirm-password">تکرار رمز عبور</label>
+                    <input class="form__input" type="password" id="confirm-password" name="confirm-password"
+                        placeholder="رمز عبور را دوباره وارد کنید" minlength="8">
+                </div>
+
+                <div class="form__buttons">
+
+                    <button type="reset" class="button clear-button">
+                        پاک کردن
+                    </button>
+                    <button type="submit" class="button submit-button">
+                        ثبت‌نام
+                    </button>
+
+                </div>
+
+            </form>
+
+
+
+        </div>
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="footer__brand">
+            <a href="#" class="link footer__item">
+                بازارینو؛ خرید ساده و مطمئن
+            </a>
+        </div>
+
+        <div class="footer__links">
+            <a href="#" class="link footer__item">
+                پشتیبانی •
+            </a>
+            <a href="#" class="link footer__item">
+                قوانین و شرایط •
+            </a>
+            <a href="#" class="link footer__item">
+                اینستاگرام
+            </a>
+        </div>
+
+        <div class="footer__copyright">
+            <span class="footer__item">
+                © ۱۴۰۵
+            </span>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

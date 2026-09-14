@@ -29,6 +29,7 @@ body {
     position: relative;
     min-width: 660px;
     overflow: auto;
+    min-height: 100vh;
 }
 
 .header {
