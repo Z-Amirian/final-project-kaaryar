@@ -41,6 +41,7 @@
     direction: ltr;
     padding: 0 10px;
     border-radius: 10px;
+    background-color: var(--color-item-background);
 }
 
 .form__input:focus {
@@ -73,26 +74,22 @@
 }
 
 .submit-button {
-    /* width: 140px; */
     width: 100%;
     padding: 10px;
     border: 1px solid var(--color-main-green);
     background-color: var(--color-main-green);
     color: white;
     border-radius: 10px;
-    /* margin-right:5px; */
     font-weight: 500;
 }
 
 .clear-button {
-    /* width: 140px; */
     width: 100%;
     padding: 10px;
     border: 1px solid var(--color-main-green);
     background-color: var(--color-item-background);
     color: var(--color-main-green);
     border-radius: 10px;
-    /* margin: 0; */
     font-weight: 500;
 
 }
@@ -121,5 +118,9 @@
 
     .form__input {
         height: 30px;
+    }
+    .main{
+        flex:1;
+        min-height: 650px;
     }
 }
